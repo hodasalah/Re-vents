@@ -6,7 +6,8 @@ class EventList extends Component {
 		return (
 			<>
 				{this.props.events.map(ev=>(
-					<EventListItem key={ev.id} event={ev}/>
+					<EventListItem key={ev.id} event={ev} selected={this.props.selectEvent}
+					deleted={this.props.DeleteEvent}/>
 				))}
 			</>
 		)
