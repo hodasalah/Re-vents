@@ -5,7 +5,7 @@ class EventList extends Component {
 	render() {
 		return (
 			<>
-				{this.props.events.map(ev=>(
+				{this.props.events.map(ev =>(
 					<EventListItem key={ev.id} event={ev} selected={this.props.selectEvent}
 					deleted={this.props.DeleteEvent}/>
 				))}
